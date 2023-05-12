@@ -1,0 +1,24 @@
+<script type="module">
+  import { createTransactionBrowser } from "/packages/paywithcoin-sdk/dist/paywithcoin-sdk.js";
+  const a = await createTransactionBrowser({
+    newTransaction: {
+      crypto_options: [
+        {
+          id: "XLM:test",
+          name: "stellar testnet",
+          code: "XLM",
+          address: "GDO6KDYV5RRNJRFZEPYUTFTBMTGQOWCBDB2OZ74EWV32BHXKX6KTNHHA",
+        },
+      ],
+      name: "Test transaction name",
+      fiat: {
+        id: "USD",
+        amount: 0.001,
+      },
+    },
+  });
+  console.log("-----", "a", a);
+  a.startCheck({});
+  a.openTab();
+  // console.log("-----", "createTransactionBrowser", createTransactionBrowser);
+</script>

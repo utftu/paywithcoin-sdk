@@ -2,15 +2,19 @@
   "name": ".",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "build": "nx run-many -t build"
+  },
   "private": true,
   "dependencies": {
-    "vite": "^4.3.5"
+    "vite": "^4.3.5",
+    "vite-plugin-dts": "^2.3.0"
   },
   "devDependencies": {
     "@nx/workspace": "16.1.4",
     "nx": "16.1.4",
-    "nx-cloud": "latest"
+    "nx-cloud": "latest",
+    "typescript": "^5.0.4"
   },
   "workspaces": [
     "packages/*"
