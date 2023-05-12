@@ -1,0 +1,12 @@
+{
+  "name": "paywithcoin-sdk",
+  "version": "0.0.1",
+  "type": "module",
+  "types": "./dist/types/paywithcoin-sdk.d.ts",
+  "scripts": {
+    "build": "node ./build.js"
+  },
+  "devDependencies": {
+    "vite": "*"
+  }
+}
