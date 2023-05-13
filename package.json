@@ -6,6 +6,8 @@
 		"build": "node ./build.js"
 	},
 	"types": "./dist/types/paywithcoin-sdk.d.ts",
+	"import": "./dist/paywithcoin-sdk.js",
+	"require": "./dist/paywithcoin-cjs.js",
 	"dependencies": {},
 	"files": [
 		"dist/**"
