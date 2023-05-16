@@ -7,7 +7,7 @@
 		"build": {
 			"executor": "nx:run-script",
 			"inputs": ["production", "^production"],
-			"outputs": ["{workspaceRoot}/dist"],
+			"outputs": ["{projectRoot}/dist"],
 			"dependsOn": ["^build"],
 			"options": {
 				"script": "build"
