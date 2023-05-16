@@ -1,5 +1,5 @@
-import { PaymentLinksProps, createPaymentLink } from "../utils/links.js";
+import {PaymentLinksProps, createPaymentLink} from '../utils/links.js';
 
-export function openTab({ origin, transaction }: PaymentLinksProps) {
-  return window.open(createPaymentLink({ origin, transaction }), "_blank");
+export function openBrowserTab({origin, transaction}: PaymentLinksProps) {
+  return window.open(createPaymentLink({origin, transaction}), '_blank');
 }
