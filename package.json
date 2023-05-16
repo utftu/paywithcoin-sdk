@@ -1,23 +1,23 @@
 {
-	"name": "paywithcoin-sdk",
-	"version": "0.0.1",
-	"type": "module",
-	"scripts": {
-		"hello": "echo hellllo sdk",
-		"build": "node ./build.js"
-	},
-	"types": "./dist/types/paywithcoin-sdk.d.ts",
-	"main": "./dist/paywithcoin-sdk.js",
-	"import": "./dist/paywithcoin-sdk.js",
-	"require": "./dist/paywithcoin-sdk.cjs",
-	"dependencies": {},
-	"files": [
-		"dist/**"
-	],
-	"devDependencies": {
-		"typescript": "^5.0.4",
-		"vite": "^4.3.5",
-		"vite-plugin-dts": "^2.3.0"
-	},
-	"license": "MIT"
+  "name": "paywithcoin-sdk",
+  "version": "0.0.3",
+  "type": "module",
+  "scripts": {
+    "hello": "echo hellllo sdk",
+    "build": "node ./build.js"
+  },
+  "types": "./dist/types/paywithcoin-sdk.d.ts",
+  "main": "./dist/paywithcoin-sdk.js",
+  "import": "./dist/paywithcoin-sdk.js",
+  "require": "./dist/paywithcoin-sdk.cjs",
+  "dependencies": {},
+  "files": [
+    "dist/**"
+  ],
+  "devDependencies": {
+    "typescript": "^5.0.4",
+    "vite": "^4.3.5",
+    "vite-plugin-dts": "^2.3.0"
+  },
+  "license": "MIT"
 }
