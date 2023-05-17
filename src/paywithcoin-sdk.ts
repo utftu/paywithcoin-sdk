@@ -7,10 +7,10 @@ import {ORIGIN} from './consts.ts';
 
 export {createTransaction, createTransactionSimple} from './transactions/transactions.ts';
 
-export function openPopup(transaction: Transaction, {origin = ORIGIN} = {}) {
+export function openPopup(transactionCode: string, {origin = ORIGIN} = {}) {
   const popupResult = openBrowserPopup({
     origin,
-    transaction: transaction.code,
+    transaction: transactionCode,
   });
   if (popupResult === null) {
     const agree = confirm(
@@ -19,14 +19,14 @@ export function openPopup(transaction: Transaction, {origin = ORIGIN} = {}) {
     if (agree) {
       window.location.href = createPaymentLink({
         origin,
-        transaction: transaction.code,
+        transaction: transactionCode,
       });
     }
   }
 }
 
-export function openTab(transaction: Transaction, {origin = ORIGIN} = {}) {
-  openBrowserTab({origin, transaction: transaction.code});
+export function openTab(transactionCode: string, {origin = ORIGIN} = {}) {
+  openBrowserTab({origin, transaction: transactionCode});
 }
 
 export function startCheck({
