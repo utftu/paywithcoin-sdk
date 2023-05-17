@@ -1,4 +1,4 @@
-export const ORIGIN = 'https://paywithcoin.vercel.app';
+export const ORIGIN = 'https://paywithcoin.online';
 
 export const cryptoOptions = {
   'XLM:test': {
