@@ -30,12 +30,12 @@ export function openTab(transaction: Transaction, {origin = ORIGIN} = {}) {
 }
 
 export function startCheck({
-  transaction,
+  transactionCode,
   onSuccess,
   onFail,
   timeout = 10_000,
 }: {
-  transaction: Transaction;
+  transactionCode: string;
   onSuccess: (transaction: Transaction) => void;
   onFail: (transaction: Transaction) => void;
   timeout: number;
@@ -43,7 +43,7 @@ export function startCheck({
   timeout = timeout > 6_000 ? timeout : 6_000;
   let timeoutStopped = false;
   let timerId = setTimeout(async function tick() {
-    const localTransaction = await getTransaction(transaction.code, origin);
+    const localTransaction = await getTransaction(transactionCode, origin);
 
     if (localTransaction.status.endsWith('_fail')) {
       onFail(localTransaction);
