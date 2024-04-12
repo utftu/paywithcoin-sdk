@@ -4,7 +4,8 @@
   "type": "module",
   "scripts": {
     "hello": "echo hellllo sdk",
-    "build": "node ./build.js"
+    "build-old": "node ./build.js",
+    "build": "vite build"
   },
   "types": "./dist/types/paywithcoin-sdk.d.ts",
   "main": "./dist/paywithcoin-sdk.js",
