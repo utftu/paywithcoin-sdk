@@ -12,7 +12,6 @@
   "main": "./dist/paywithcoin-sdk.js",
   "import": "./dist/paywithcoin-sdk.js",
   "require": "./dist/paywithcoin-sdk.cjs",
-  "dependencies": {},
   "files": [
     "dist/**"
   ],

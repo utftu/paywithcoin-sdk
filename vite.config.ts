@@ -1,4 +1,4 @@
-import {defineConfig} from 'vite';
+import {defineConfig, UserConfigExport} from 'vite';
 import {rmSync} from 'fs';
 import dts from 'vite-plugin-dts';
 
@@ -14,11 +14,13 @@ export default defineConfig(() => {
         formats: ['es'],
       },
     },
-    plugins: [
-      dts({
-        tsConfigFilePath: '../../tsconfig.json',
-        outputDir: './dist/types',
-      }),
-    ],
-  };
+    // plugins: [dts()],
+    // plugins: [
+    //   // @ts-ignore
+    //   dts({
+    //     tsConfigFilePath: '../../tsconfig.json',
+    //     outputDir: './dist/types',
+    //   }),
+    // ],
+  } satisfies UserConfigExport;
 });
